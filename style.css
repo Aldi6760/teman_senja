@@ -141,7 +141,7 @@ h1 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0;
+    padding: 80px 0;
     scroll-margin-top: 0;
 }
 
@@ -198,8 +198,18 @@ h1 {
     margin-top: 5px;
 }
 
+.feature-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .feature-icon i {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1;
 }
 
 /* Product Section */
@@ -454,8 +464,13 @@ h1 {
     }
     .about-section { text-align: center; }
     .feature-icon { margin-bottom: 10px; }
-    .d-flex.align-items-center { flex-direction: column; }
-    .feature-icon.me-3 { margin-right: 0 !important; }
+    .about-content .d-flex.align-items-center { 
+        flex-direction: row !important; 
+        align-items: center !important;
+        text-align: left;
+        width: 100%;
+    }
+    .feature-icon.me-3 { margin-right: 1.2rem !important; }
 }
 
 @media (max-width: 768px) {
