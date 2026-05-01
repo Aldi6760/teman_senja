@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teman Senja - Coffee Shop</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TEMAN SENJA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#coffee">Coffee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dessert">Dessert</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="text-uppercase text-accent fw-bold mb-2 sub-welcome">Welcome</p>
+                    <h1 class="display-3 fw-bold mb-4">We serve the <br> <span class="text-accent">richest coffee</span> in <br> the city!</h1>
+                    <p class="lead mb-5 text-white">Nikmati kehangatan setiap tetes kopi pilihan dari biji terbaik, diseduh dengan cinta untuk menemani senja Anda.</p>
+                    <a href="#coffee" class="btn btn-accent px-5 py-3 rounded-pill text-white fw-bold">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <div class="about-image-wrapper position-relative">
+                        <img src="Asset/About me.png" alt="Tentang Teman Senja" class="img-fluid rounded-4 shadow-lg">
+                        <div class="about-experience-badge">
+                            <span class="number">5+</span>
+                            <span class="text">Years of <br> Perfection</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <p class="text-accent text-uppercase fw-bold mb-2 sub-title">Our Story</p>
+                        <h2 class="display-5 fw-bold mb-4 about-title">Brewing Moments, <br> Creating Memories</h2>
+                        <p class="lead text-muted mb-4">Teman Senja lahir dari kecintaan kami terhadap kopi dan momen tenang di penghujung hari. Kami percaya bahwa setiap cangkir memiliki cerita, dan setiap tegukan adalah perjalanan rasa.</p>
+                        <p class="mb-5 text-secondary">Dimulai dari sebuah kedai kecil di sudut kota, kami berkomitmen untuk hanya menggunakan biji kopi pilihan dari petani lokal dan memprosesnya dengan standar tertinggi untuk memastikan kualitas yang konsisten di setiap sajian Anda.</p>
+                        
+                        <div class="row g-4 mb-5">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="feature-icon me-3">
+                                        <i class="bi bi-patch-check-fill text-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Premium Quality</h6>
+                                        <small class="text-muted">Biji kopi pilihan terbaik</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="feature-icon me-3">
+                                        <i class="bi bi-cup-hot-fill text-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Expert Barista</h6>
+                                        <small class="text-muted">Diseduh oleh ahlinya</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#coffee" class="btn btn-dark px-4 py-2 rounded-pill">Explore Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Carousel Section -->
+    <section id="gallery" class="carousel-section">
+        <div id="cafeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="Asset/slider1.png" class="d-block w-100 carousel-img" alt="Gallery 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-6 fw-bold">Cozy Atmosphere</h2>
+                        <p>Tempat ternyaman untuk menikmati senja Anda.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="Asset/slider2.png" class="d-block w-100 carousel-img" alt="Gallery 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-6 fw-bold">Premium Taste</h2>
+                        <p>Dibuat dengan bahan berkualitas tinggi untuk rasa yang tak terlupakan.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="Asset/slider3.png" class="d-block w-100 carousel-img" alt="Gallery 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-6 fw-bold">Expertly Brewed</h2>
+                        <p>Setiap cangkir adalah karya seni dari barista kami.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Coffee Section -->
+    <section id="coffee" class="product-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-2 section-title">OUR SPECIAL COFFEE</h2>
+            <div class="row g-4 mt-4">
+                <!-- Product Card 1 -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="position-relative">
+                            <img src="Asset/Cofee 1.png" class="card-img-top" alt="Espresso">
+                            <button class="wishlist-btn border-0 bg-transparent position-absolute top-0 end-0 p-3">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Espresso</h5>
+                            <p class="small text-muted mb-3">Kopi hitam pekat dengan aroma yang kuat dan crema sempurna.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 20.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail" 
+                                    data-bs-title="Espresso" 
+                                    data-bs-price="Rp 20.000" 
+                                    data-bs-image="Asset/Cofee 1.png"
+                                    data-bs-desc="Kopi hitam pekat dengan aroma yang kuat dan crema sempurna.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/Coffe 2.png" class="card-img-top" alt="Cafe Latte">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Americano</h5>
+                            <p class="small text-muted mb-3">Espresso dengan tambahan air panas untuk rasa yang lebih ringan.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 22.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Americano" 
+                                    data-bs-price="Rp 22.000" 
+                                    data-bs-image="Asset/Coffe 2.png"
+                                    data-bs-desc="Espresso dengan tambahan air panas untuk rasa yang lebih ringan.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/Coffe 3.png" class="card-img-top" alt="Cappuccino">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Cappuccino</h5>
+                            <p class="small text-muted mb-3">Espresso dengan lapisan foam susu yang tebal dan nikmat.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 28.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Cappuccino" 
+                                    data-bs-price="Rp 28.000" 
+                                    data-bs-image="Asset/Coffe 3.png"
+                                    data-bs-desc="Espresso dengan lapisan foam susu yang tebal dan nikmat.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coffee Card 4 -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/Cofee 4.png" class="card-img-top" alt="Cafe Latte">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Cafe Latte</h5>
+                            <p class="small text-muted mb-3">Perpaduan espresso lembut dengan susu uap yang creamy.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 28.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Cafe Latte" data-bs-price="Rp 28.000" data-bs-image="Asset/Cofee 4.png"
+                                    data-bs-desc="Perpaduan espresso lembut dengan susu uap yang creamy.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coffee Card 5 -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/coffe 5.png" class="card-img-top" alt="Cappuccino">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Warm Sunset Cappuccino</h5>
+                            <p class="small text-muted mb-3">Cappuccino hangat selembut cahaya senja.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 25.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Warm Sunset Cappuccino" data-bs-price="Rp 25.000" data-bs-image="Asset/coffe 5.png"
+                                    data-bs-desc="Cappuccino hangat dengan sentuhan kelembutan seperti cahaya senja.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coffee Card 6 -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/Coffe 6.png" class="card-img-top" alt="Flat White">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Soft Dusk Flat White</h5>
+                            <p class="small text-muted mb-3">Flat white yang lembut dan menenangkan.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 28.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Soft Dusk Flat White" data-bs-price="Rp 28.000" data-bs-image="Asset/Coffe 6.png"
+                                    data-bs-desc="Flat white yang lembut, setenang suasana petang yang syahdu.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coffee Card 7 -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/coffe 7.png" class="card-img-top" alt="Mocha">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Golden Hour Latte</h5>
+                            <p class="small text-muted mb-3">Latte dengan perpaduan warna keemasan.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 30.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Golden Hour Latte" data-bs-price="Rp 30.000" data-bs-image="Asset/coffe 7.png"
+                                    data-bs-desc="Latte dengan perpaduan warna keemasan yang sempurna untuk momen terbaik Anda.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coffee Card 8 -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/coffe 8.png" class="card-img-top" alt="Affogato">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Twilight Cream Latte</h5>
+                            <p class="small text-muted mb-3">Latte super creamy untuk menemani petang.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 35.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Twilight Cream Latte" data-bs-price="Rp 35.000" data-bs-image="Asset/coffe 8.png"
+                                    data-bs-desc="Latte super creamy yang menemani masa transisi siang ke malam.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </section>
+
+    <!-- Dessert Section -->
+    <section id="dessert" class="product-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-2 section-title">OUR SPECIAL DESSERT</h2>
+            <div class="row g-4 mt-4">
+                <!-- Dessert Card 1-8 -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/des1.jpg" class="card-img-top" alt="Sunset Tiramisu">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Sunset Tiramisu</h5>
+                            <p class="small text-muted mb-3">Tiramisu lembut dengan rasa kopi yang mendalam.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 30.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Sunset Tiramisu" data-bs-price="Rp 30.000" data-bs-image="Asset/des1.jpg"
+                                    data-bs-desc="Tiramisu klasik dengan sentuhan rasa kopi espresso yang kuat, selembut cahaya senja.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/des2.jpg" class="card-img-top" alt="Berry Sunset Cheesecake">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Berry Sunset Cheesecake</h5>
+                            <p class="small text-muted mb-3">Cheesecake berry dengan gradasi warna senja.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 35.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Berry Sunset Cheesecake" data-bs-price="Rp 35.000" data-bs-image="Asset/des2.jpg"
+                                    data-bs-desc="Cheesecake premium dengan saus berry merah yang segar seperti langit sore.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/des3.jpg" class="card-img-top" alt="Golden Sunset Waffle">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Golden Sunset Waffle</h5>
+                            <p class="small text-muted mb-3">Waffle renyah dengan siraman madu keemasan.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 25.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Golden Sunset Waffle" data-bs-price="Rp 25.000" data-bs-image="Asset/des3.jpg"
+                                    data-bs-desc="Waffle hangat yang renyah di luar dan lembut di dalam, disajikan dengan sirup keemasan.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/des4.jpg" class="card-img-top" alt="Dusk Churros">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Dusk Churros</h5>
+                            <p class="small text-muted mb-3">Churros renyah dengan celupan cokelat pekat.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 20.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Dusk Churros" data-bs-price="Rp 20.000" data-bs-image="Asset/des4.jpg"
+                                    data-bs-desc="Churros khas yang digoreng sempurna dengan taburan kayu manis dan cokelat pekat.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Row of Desserts -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/des5.jpg" class="card-img-top" alt="Sunset Savory Pizza">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Sunset Savory Pizza</h5>
+                            <p class="small text-muted mb-3">Pizza mini dengan rasa yang kaya.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 45.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Sunset Savory Pizza" data-bs-price="Rp 45.000" data-bs-image="Asset/des5.jpg"
+                                    data-bs-desc="Pizza tipis renyah dengan topping premium yang memanjakan lidah di waktu senja.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/des6.jpg" class="card-img-top" alt="Sunset Banana Pancake">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Sunset Banana Pancake</h5>
+                            <p class="small text-muted mb-3">Pancake pisang lembut yang manis.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 28.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Sunset Banana Pancake" data-bs-price="Rp 28.000" data-bs-image="Asset/des6.jpg"
+                                    data-bs-desc="Pancake pisang yang sangat lembut, disajikan dengan topping karamel hangat.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/des7.jpg" class="card-img-top" alt="Midnight Oreo Cheesecake">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Midnight Oreo Cheesecake</h5>
+                            <p class="small text-muted mb-3">Cheesecake dengan potongan oreo pekat.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 32.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Midnight Oreo Cheesecake" data-bs-price="Rp 32.000" data-bs-image="Asset/des7.jpg"
+                                    data-bs-desc="Perpaduan cheesecake yang creamy dengan remahan oreo yang gelap seperti tengah malam.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <img src="Asset/des8.jpg" class="card-img-top" alt="Twilight Blueberry Cheesecake">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">Twilight Blueberry Cheesecake</h5>
+                            <p class="small text-muted mb-3">Cheesecake blueberry yang manis dan segar.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Rp 35.000</span>
+                                <button class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#productDetail"
+                                    data-bs-title="Twilight Blueberry Cheesecake" data-bs-price="Rp 35.000" data-bs-image="Asset/des8.jpg"
+                                    data-bs-desc="Cheesecake lembut dengan siraman blueberry segar yang eksotis seperti langit twilight.">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-3 section-title" style="font-size: 1.8rem;">GET IN TOUCH</h2>
+            <div class="row g-3 align-items-center">
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="contact-info-card p-3 rounded-4 shadow-sm bg-white">
+                        <div class="row g-3 mb-3">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill text-accent me-2"></i>
+                                    <div style="font-size: 0.8rem;">
+                                        <h6 class="fw-bold mb-0 small">Location</h6>
+                                        <p class="text-muted mb-0" style="font-size: 0.7rem;">Jl. Senja No. 12</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-telephone-fill text-accent me-2"></i>
+                                    <div style="font-size: 0.8rem;">
+                                        <h6 class="fw-bold mb-0 small">Phone</h6>
+                                        <p class="text-muted mb-0" style="font-size: 0.7rem;">+62 812 3456</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-envelope-fill text-accent me-2"></i>
+                                    <div style="font-size: 0.8rem;">
+                                        <h6 class="fw-bold mb-0 small">Email</h6>
+                                        <p class="text-muted mb-0" style="font-size: 0.7rem;">hello@senja.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill text-accent me-2"></i>
+                                    <div style="font-size: 0.8rem;">
+                                        <h6 class="fw-bold mb-0 small">Hours</h6>
+                                        <p class="text-muted mb-0" style="font-size: 0.7rem;">09.00 - 22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links d-flex gap-2 mb-3">
+                            <a href="#" class="social-btn" style="width: 30px; height: 30px; font-size: 0.8rem;"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-btn" style="width: 30px; height: 30px; font-size: 0.8rem;"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-btn" style="width: 30px; height: 30px; font-size: 0.8rem;"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                        <!-- Google Maps Embed -->
+                        <div class="map-container rounded-3 overflow-hidden shadow-sm" style="height: 120px;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.18247065983!2d106.71967677812502!3d-6.221528699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e070857503%3A0x6a2e4827d09598a3!2sJakarta!5e0!3m2!1sen!2sid!4v1714477800000!5m2!1sen!2sid" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <form class="contact-form p-3 rounded-4 shadow-sm bg-white">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Full Name</label>
+                                <input type="text" class="form-control rounded-3" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Email Address</label>
+                                <input type="email" class="form-control rounded-3" placeholder="Your Email">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small fw-bold">Subject</label>
+                                <input type="text" class="form-control rounded-3" placeholder="Subject">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small fw-bold">Message</label>
+                                <textarea class="form-control rounded-3" rows="4" placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-dark w-100 py-3 rounded-pill fw-bold">SEND MESSAGE</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold text-white mb-3 d-block" href="#">TEMAN SENJA</a>
+                    <p class="text-muted small">Teman Senja adalah tempat di mana kopi dan ketenangan bertemu. Kami menyajikan biji kopi pilihan terbaik untuk menemani setiap momen berharga Anda di penghujung hari.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#coffee">Coffee</a></li>
+                        <li><a href="#dessert">Dessert</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-white fw-bold mb-3">Business Hours</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2">Monday - Friday: 09:00 - 22:00</li>
+                        <li class="mb-2">Saturday: 09:00 - 23:00</li>
+                        <li>Sunday: 09:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-white fw-bold mb-3">Follow Us</h6>
+                    <p class="text-muted small mb-3">Dapatkan info promo terbaru dari kami.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-muted small">
+                <p class="mb-0">&copy; 2026 Teman Senja Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Detail Produk Minimalis -->
+    <div class="modal fade" id="productDetail" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" style="max-width: 400px;">
+            <div class="modal-content border-0">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="modal-image-container">
+                        <img src="" alt="Product">
+                    </div>
+                    <h3 class="modal-product-title text-center">Product Name</h3>
+                    <p class="modal-product-desc text-center">Description goes here.</p>
+                    <span class="modal-price-minimal text-center">Rp 0</span>
+                    <button class="btn-order-minimal" data-bs-dismiss="modal">ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
